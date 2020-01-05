@@ -171,6 +171,6 @@ if __name__ == '__main__':
     for s in pagelist2:
         print(s)
         start_single_page(s)
-    for s in pagelist1:
-	    print(s)
-	    start_single_page(s)
+    for s in pagelist2:
+        print(s)
+        start_single_page(s)

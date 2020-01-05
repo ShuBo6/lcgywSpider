@@ -160,7 +160,7 @@ def start_single_page(url):
     count = 0
     for img in imglist:
         count += 1
-        executor.submit(get_pic, img, root,root + str(count))
+        executor.submit(get_pic, img, root,root + str(count) + ".jpg")
         # f = executor.submit(get_pic, img, root,root + str(count))
         # futures.append(f)
     # results = [f.result() for f in futures]
@@ -171,3 +171,6 @@ if __name__ == '__main__':
     for s in pagelist2:
         print(s)
         start_single_page(s)
+    for s in pagelist1:
+	    print(s)
+	    start_single_page(s)
